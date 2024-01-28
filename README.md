@@ -30,7 +30,7 @@ class Main {
     // "openssl enc -pass:****"
 
     System.out.println(Arrays.toString(cmd.toArgs()));
-    // ["openssl", "enc", "-pass:P@ssw0rd"]
+    // ["openssl", "enc", "-pass", "pass:P@ssw0rd"]
 
     System.out.println(cmd.mask("<password>"));
     // "openssl enc -pass:<password>"
