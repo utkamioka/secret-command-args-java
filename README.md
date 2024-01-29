@@ -27,13 +27,13 @@ class Main {
       .build();
 
     System.out.println(cmd);
-    // "openssl enc -pass:****"
+    // "openssl enc -pass pass:****"
 
     System.out.println(Arrays.toString(cmd.toArgs()));
     // ["openssl", "enc", "-pass", "pass:P@ssw0rd"]
 
     System.out.println(cmd.mask("<password>"));
-    // "openssl enc -pass:<password>"
+    // "openssl enc -pass pass:<password>"
 
     System.out.println(cmd.alt("encoding message..."));
     // "encoding message..."
